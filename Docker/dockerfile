@@ -6,10 +6,10 @@ RUN apt update -y && apt install git -y
 
 RUN apt-get install curl -y && curl -fsSL https://deb.nodesource.com/setup_21.x | bash - &&  apt-get install nodejs -y 
 
-RUN git clone https://github.com/valeR123/Gestion_notas2.0.git 
+RUN git clone https://github.com/ElianFRagozo/Notas_capas.git 
 
 
-WORKDIR /Gestion_notas2.0
+WORKDIR /Notas_capas
 
 
 RUN npm init -y && npm install -y  && npm install -g http-server -y
